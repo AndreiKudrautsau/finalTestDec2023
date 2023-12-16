@@ -1,0 +1,53 @@
+1. Используя команду cat в терминале операционной системы Linux, создать два фаи?ла Домашние животные (заполнив файл собаками, кошками, хомяками) и Вьючные животными заполнив файл Лошадьми, верблюдами и ослы), …
+  280  cat >  pets.txt
+  281  cat >  sumpters.txt
+  282  cat  sumpters.txt
+  283  cat >  sumpters.txt
+  284  cat  sumpters.txt
+  285  cat >  sumpters.txt
+  286  cat  sumpters.txt
+
+. а затем объединить их.
+
+  287  cat pets.txt sumpters.txt > animals.txt
+
+Просмотреть содержимое созданного фаи?ла.
+
+  288  cat animals.txt
+
+Переименовать фаи?л, дав ему новое имя (Друзья человека).
+
+  289  mv animals.txt friendsOfPeople.txt
+  290  cat friendsOfPeople.txt 
+  291  ls
+
+2. Создать директорию, переместить файл туда.
+
+   292  mkdir part1_linux
+  293  ls
+  294  mv friendsOfPeople.txt part1_linux/
+  295  ls
+  296  cd part1_linux/
+  297  ls
+
+3. Подключить дополнительный репозиторий MySQL. Установить любой пакет из этого репозитория.
+
+  298  apt search mysql
+  299  apt install mysql-server
+  300  sudo apt install mysql-server
+  301  service mysql status
+
+
+
+4. Установить и удалить deb-пакет с помощью dpkg. 
+
+  337  sudo wget https://launchpad.net/ubuntu/+source/cpuburn/1.4a-6/+build/7389609/+files/cpuburn_1.4a-6_amd64.deb
+  338  sudo dpkg -i cpuburn_1.4a-6_amd64.deb
+  350  sudo dpkg -l
+  354  sudo dpkg -r cpuburn
+  355  sudo dpkg -l
+
+5. Выложить историю команд в терминале ubuntu
+
+  356  history
+
